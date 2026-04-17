@@ -289,7 +289,7 @@ async function handleCloseModal(interaction) {
     }
   }, 3600000); // 1 час
 }
-
+}
 
 client.login(process.env.DISCORD_TOKEN);
 
