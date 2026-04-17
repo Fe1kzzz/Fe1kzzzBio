@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "setup": "node setup-panel.js",
     "pm2:start": "pm2 start ecosystem.config.js",
     "pm2:stop": "pm2 stop burp-tickets-bot",
     "pm2:restart": "pm2 restart burp-tickets-bot",
