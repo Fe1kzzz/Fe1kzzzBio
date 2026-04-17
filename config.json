@@ -1,0 +1,184 @@
+{
+  "categories": [
+    {
+      "id": "unban",
+      "name": "Заявка на разбан",
+      "emoji": "⚠️",
+      "description": "Разбан | Burp Rust",
+      "fields": [
+        {
+          "label": "Предоставьте SteamID",
+          "placeholder": "Укажите SteamID",
+          "required": true
+        },
+        {
+          "label": "Какая у вас причина бана?",
+          "placeholder": "Укажите причину бана",
+          "required": true
+        },
+        {
+          "label": "Подробно опишите всю ситуацию",
+          "placeholder": "Пример: Время бана, что я делал перед баном",
+          "required": true,
+          "style": "paragraph"
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "name": "Вопросы по серверу",
+      "emoji": "👤",
+      "description": "Баги/недоработки/вопросы | Burp Rust",
+      "fields": [
+        {
+          "label": "Ваш SteamID",
+          "placeholder": "Пример: [steamcommunity.com/id/...]",
+          "required": true
+        },
+        {
+          "label": "Тип проблемы/предложения",
+          "placeholder": "Пример: Баг с текстурами, Идея для доната",
+          "required": true
+        },
+        {
+          "label": "Подробное описание",
+          "placeholder": "Опишите ситуацию: что произошло, как воспроизвести ошибку и т.д.",
+          "required": true,
+          "style": "paragraph"
+        }
+      ]
+    },
+    {
+      "id": "moderator",
+      "name": "Заявка на модерацию",
+      "emoji": "🛡️",
+      "description": "Заявка на модератора | Burp Rust",
+      "fields": [
+        {
+          "label": "Игровой никнейм и ссылка на Steam-профиль",
+          "placeholder": "Пример: [NickName] | [steamcommunity.com/id/...]",
+          "required": true
+        },
+        {
+          "label": "Возраст и часовой пояс",
+          "placeholder": "Пример: 16 лет | МСК",
+          "required": true
+        },
+        {
+          "label": "Опыт в RUST + опыт в модерации (часы/вайпы)",
+          "placeholder": "Пример: 500 часов | 3 вайпа | Опыт модерации: ...",
+          "required": true,
+          "style": "paragraph"
+        },
+        {
+          "label": "График активности и личные качества",
+          "placeholder": "Пример: 4 часа в день | Ответственность, стрессоустойчивость | Английский B2",
+          "required": true,
+          "style": "paragraph"
+        },
+        {
+          "label": "Почему вы хотите стать модератором проекта?",
+          "placeholder": "Опишите ваши цели и ожидания",
+          "required": true,
+          "style": "paragraph"
+        }
+      ]
+    },
+    {
+      "id": "helper",
+      "name": "Заявка на хеллера",
+      "emoji": "🛡️",
+      "description": "Заявка на хеллера | Burp Rust",
+      "fields": [
+        {
+          "label": "Игровой никнейм и ссылка на Steam-профиль",
+          "placeholder": "Пример: [NickName] | [steamcommunity.com/id/...]",
+          "required": true
+        },
+        {
+          "label": "Возраст и часовой пояс",
+          "placeholder": "Пример: 16 лет | МСК",
+          "required": true
+        },
+        {
+          "label": "Опыт в RUST + опыт в хелперстве",
+          "placeholder": "Пример: 500 часов | Опыт в хелпертсве: ...",
+          "required": true,
+          "style": "paragraph"
+        },
+        {
+          "label": "График активности и личные качества",
+          "placeholder": "Пример: 4 часа в день | Ответственность, стрессоустойчивость | Английский B2",
+          "required": true,
+          "style": "paragraph"
+        },
+        {
+          "label": "Почему вы хотите стать хеллером проекта?",
+          "placeholder": "Опишите ваши цели и ожидания",
+          "required": true,
+          "style": "paragraph"
+        }
+      ]
+    },
+    {
+      "id": "player_complaint",
+      "name": "Жалоба на игрока",
+      "emoji": "⚔️",
+      "description": "Жалоба на игрока | Burp Rust",
+      "fields": [
+        {
+          "label": "Ваш SteamID",
+          "placeholder": "Укажите SteamID",
+          "required": true
+        },
+        {
+          "label": "На кого жалоба? (ник/SteamID)",
+          "placeholder": "Укажите ник или SteamID игрока",
+          "required": true
+        },
+        {
+          "label": "Причина жалобы",
+          "placeholder": "Опишите причину жалобы",
+          "required": true,
+          "style": "paragraph"
+        },
+        {
+          "label": "Доказательства (ссылки на скриншоты/видео)",
+          "placeholder": "Ссылки на доказательства",
+          "required": false,
+          "style": "paragraph"
+        }
+      ]
+    },
+    {
+      "id": "moderator_complaint",
+      "name": "Жалоба на модератора",
+      "emoji": "⚔️",
+      "description": "Жалоба на модератора | Burp Rust",
+      "fields": [
+        {
+          "label": "Ваш SteamID",
+          "placeholder": "Укажите SteamID",
+          "required": true
+        },
+        {
+          "label": "На какого модератора жалоба?",
+          "placeholder": "Укажите ник модератора",
+          "required": true
+        },
+        {
+          "label": "Причина жалобы",
+          "placeholder": "Подробно опишите ситуацию",
+          "required": true,
+          "style": "paragraph"
+        },
+        {
+          "label": "Доказательства (ссылки на скриншоты/видео)",
+          "placeholder": "Ссылки на доказательства",
+          "required": false,
+          "style": "paragraph"
+        }
+      ]
+    }
+  ]
+}
