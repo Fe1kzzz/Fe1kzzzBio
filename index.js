@@ -83,6 +83,10 @@ async function handleModalSubmit(interaction) {
     .setColor('#5865F2')
     .setTimestamp();
 
+  if (category.icon) {
+    embed.setThumbnail(category.icon);
+  }
+
   category.fields.forEach((field, index) => {
     const value = interaction.fields.getTextInputValue(`field_${index}`);
     embed.addFields({ name: field.label, value: value || 'Не указано' });

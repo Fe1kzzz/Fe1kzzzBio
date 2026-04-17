@@ -4,6 +4,7 @@
       "id": "unban",
       "name": "Заявка на разбан",
       "emoji": "⚠️",
+      "icon": "https://i.imgur.com/Q4x1CCx.png",
       "description": "Разбан | Burp Rust",
       "fields": [
         {
@@ -28,6 +29,7 @@
       "id": "questions",
       "name": "Вопросы по серверу",
       "emoji": "👤",
+      "icon": "https://i.imgur.com/1SOM2Ig.png",
       "description": "Баги/недоработки/вопросы | Burp Rust",
       "fields": [
         {
@@ -52,6 +54,7 @@
       "id": "moderator",
       "name": "Заявка на модерацию",
       "emoji": "🛡️",
+      "icon": "https://i.imgur.com/MOB1mg2.png",
       "description": "Заявка на модератора | Burp Rust",
       "fields": [
         {
@@ -88,6 +91,7 @@
       "id": "helper",
       "name": "Заявка на хеллера",
       "emoji": "🛡️",
+      "icon": "https://i.imgur.com/MOB1mg2.png",
       "description": "Заявка на хеллера | Burp Rust",
       "fields": [
         {
@@ -124,6 +128,7 @@
       "id": "player_complaint",
       "name": "Жалоба на игрока",
       "emoji": "⚔️",
+      "icon": "https://i.imgur.com/Q4x1CCx.png",
       "description": "Жалоба на игрока | Burp Rust",
       "fields": [
         {
@@ -154,6 +159,7 @@
       "id": "moderator_complaint",
       "name": "Жалоба на модератора",
       "emoji": "⚔️",
+      "icon": "https://i.imgur.com/Q4x1CCx.png",
       "description": "Жалоба на модератора | Burp Rust",
       "fields": [
         {
