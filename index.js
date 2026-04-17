@@ -72,7 +72,7 @@ async function handleModalSubmit(interaction) {
   
   if (!category) return;
 
-  await interaction.deferReply({ ephemeral: true });
+  await interaction.deferReply({ flags: 64 }); // 64 = Ephemeral
 
   const guild = interaction.guild;
   
@@ -155,8 +155,7 @@ async function handleModalSubmit(interaction) {
   await ticketChannel.send(`<@${interaction.user.id}> ваш тикет создан!`);
 
   await interaction.editReply({
-    content: `✅ Тикет создан: ${ticketChannel}`,
-    ephemeral: true
+    content: `✅ Тикет создан: ${ticketChannel}`
   });
 }
 
@@ -192,12 +191,12 @@ async function handleButton(interaction) {
   const ticketData = activeTickets.get(interaction.channel.id);
   
   if (!ticketData) {
-    return interaction.reply({ content: '❌ Данные тикета не найдены.', ephemeral: true });
+    return interaction.reply({ content: '❌ Данные тикета не найдены.', flags: 64 });
   }
 
   if (interaction.customId === 'claim_ticket') {
     if (ticketData.claimedBy) {
-      return interaction.reply({ content: '❌ Этот тикет уже взят в работу!', ephemeral: true });
+      return interaction.reply({ content: '❌ Этот тикет уже взят в работу!', flags: 64 });
     }
 
     ticketData.claimedBy = interaction.user.id;
@@ -214,7 +213,7 @@ async function handleButton(interaction) {
     }
 
     await message.edit({ embeds: [newEmbed] });
-    await interaction.reply({ content: `✅ Вы взяли тикет в работу!`, ephemeral: false });
+    await interaction.reply({ content: `✅ Вы взяли тикет в работу!` });
 
   } else if (interaction.customId === 'close_ticket') {
     const modal = new ModalBuilder()
@@ -235,14 +234,14 @@ async function handleButton(interaction) {
 
 async function handleRatingSelect(interaction) {
   const rating = interaction.values[0];
-  await interaction.reply({ content: `✅ Спасибо за оценку: ${rating} ⭐`, ephemeral: false });
+  await interaction.reply({ content: `✅ Спасибо за оценку: ${rating} ⭐` });
   await interaction.message.edit({ components: [] });
 }
 
 async function handleCloseModal(interaction) {
   const ticketData = activeTickets.get(interaction.channel.id);
   if (!ticketData) {
-    return interaction.reply({ content: '❌ Данные тикета не найдены.', ephemeral: true });
+    return interaction.reply({ content: '❌ Данные тикета не найдены.', flags: 64 });
   }
 
   const reason = interaction.fields.getTextInputValue('close_reason');
@@ -289,7 +288,7 @@ async function handleCloseModal(interaction) {
     }
   }, 3600000); // 1 час
 }
-}
+
 
 client.login(process.env.DISCORD_TOKEN);
 
